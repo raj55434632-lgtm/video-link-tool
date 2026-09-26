@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Video Link Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <div class="brand">VIDEO LINK TOOL</div>
+    <h1>Paste a video link</h1>
+    <p class="sub">Preview a directly accessible video and save it to your device.</p>
+
+    <form id="form">
+      <input id="url" type="url" required
+             placeholder="https://example.com/video.mp4"
+             autocomplete="off">
+      <button type="submit">Preview</button>
+    </form>
+
+    <section id="result" class="hidden">
+      <video id="player" controls playsinline></video>
+      <a id="download" class="download" href="#" download>Download video</a>
+      <p id="message" class="message"></p>
+    </section>
+
+    <p class="legal">
+      Use this tool only for videos you are allowed to download.
+      It does not bypass DRM, private content, login restrictions, or a site's download protections.
+    </p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

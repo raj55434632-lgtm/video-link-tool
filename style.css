@@ -1,0 +1,19 @@
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:grid;place-items:center;padding:20px;
+font-family:Arial,sans-serif;background:#f3f4f6;color:#111}
+.card{width:min(620px,100%);background:white;border-radius:18px;padding:28px;
+box-shadow:0 10px 35px rgba(0,0,0,.08)}
+.brand{font-size:12px;font-weight:800;letter-spacing:2px;color:#666}
+h1{margin:8px 0;font-size:30px}
+.sub{color:#666}
+form{display:flex;gap:10px;margin-top:22px}
+input{flex:1;min-width:0;padding:13px;border:1px solid #ccc;border-radius:10px;font-size:15px}
+button,.download{border:0;border-radius:10px;padding:13px 18px;font-weight:700;cursor:pointer}
+button{background:#111;color:white}
+#result{margin-top:20px}
+video{width:100%;max-height:420px;background:#000;border-radius:12px}
+.download{display:block;text-align:center;text-decoration:none;background:#16803c;color:white;margin-top:12px}
+.message{font-size:13px;color:#666}
+.legal{font-size:11px;color:#777;line-height:1.5;margin-top:22px}
+.hidden{display:none}
+@media(max-width:520px){form{flex-direction:column}button{width:100%}}
